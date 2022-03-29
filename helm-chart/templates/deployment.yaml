@@ -20,7 +20,7 @@ spec:
       labels:
         {{- include "sample.selectorLabels" . | nindent 8 }}
     spec:
-      serviceAccount : default
+      serviceAccountName: {{ include "sample.serviceAccountName" . }}
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
