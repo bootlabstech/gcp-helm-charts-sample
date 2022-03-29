@@ -78,7 +78,7 @@ podEnv:
 
 virtualservice:
   host: "sample.m-devsecops.com"
-  gateway: "istio-system/default-gateway"
+  gateway: "istio-system/default-internal-gateway"
   port: 8080
   prefix: /
 
